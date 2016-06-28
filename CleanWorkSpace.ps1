@@ -1,4 +1,4 @@
-$desktop='C:\Users\zoy5szh\Desktop'
+$desktop='C:\Users\x\Desktop'
 cd $desktop
 rm *.url,*.lnk
 
