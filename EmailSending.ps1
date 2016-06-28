@@ -6,19 +6,19 @@ $style="
 	html body {font-family: 'Segoe UI','Segoe',Tahoma,Helvetica,Arial,sans-serif; }
 </style>
 "
- 
+Â 
 $messageBody = Get-Process |select Name, Path, Company, CPU|Select-Object -First 10 | convertto-html -Head $style
- 
- 
+Â 
+Â 
 $theMail = @{
-    From            = "yazhou.zhou@bosch.com"
-    To              = "yazhou.zhou@bosch.com"
+    From            = "xx@xx.com"
+    To              = "xx@xx.com"
     Subject         = "Top 10 processes"
     BodyAsHTML      = $True
     Body            = "$messageBody"
     Priority        = "Normal"
     SmtpServer      = "xx.xx.com"
- 
+Â 
 }
- 
+Â 
 Send-MailMessage @theMail 
