@@ -1,5 +1,5 @@
-﻿# due to the cache issue in some cases
-# use to update css and js with MD5 value as suffix
+# due to the cache issue in some cases
+# used to update css and js with MD5 value as suffix
 
 $projectPath="D:\devenv\git\main"
 
