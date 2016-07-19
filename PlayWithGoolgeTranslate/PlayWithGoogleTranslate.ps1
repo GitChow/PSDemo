@@ -26,7 +26,7 @@ function wait-ieBusy {
 #handle the music
 Add-Type -AssemblyName presentationCore
 $wmplayer = New-Object System.Windows.Media.MediaPlayer
-$filepath="C:\Users\...path\opening\bensound-funnysong.mp3"
+$filepath="C:\Users\IBM\Documents\GitHub\PSDemo\PlayWithGoolgeTranslate\bensound-funnysong.mp3"
 $wmplayer.Volume=0.2
 $wmplayer.Open($filepath)
 $wmplayer.Play()
