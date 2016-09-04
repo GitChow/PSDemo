@@ -1,5 +1,5 @@
 ``` powershell
-# win10 app
+# uninstall win10 app
 Get-AppxPackage *zunemusic* | Remove-AppxPackage 
 Get-AppxPackage *windowsmaps* | Remove-AppxPackage
 
