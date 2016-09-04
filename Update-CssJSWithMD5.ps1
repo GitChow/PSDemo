@@ -39,7 +39,7 @@ Get-ChildItem *.js | %{
 
     $allJSP=Get-ChildItem -Recurse -File *.jsp ..\view
     foreach($file in $allJSP){
-        (Get-Content $file.FullName).replace($currentName, $newFileName) | Set-Content $file.FullName
+        (Get-Content $file.FullName).replace("$currentName`"", "$newFileName`"") | Set-Content $file.FullName
     }
 }
 
